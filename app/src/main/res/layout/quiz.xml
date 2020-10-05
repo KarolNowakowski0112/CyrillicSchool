@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/quiz_up_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:height="60dp"
+        android:textSize="40dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:background="@color/top_bg"/>
+
+    <TextView
+        android:id="@+id/score_txt"
+        android:textStyle="normal"
+        android:textSize="22dp"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/question_txt"
+        android:textStyle="normal"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp" />
+
+    <Button
+        android:id="@+id/first_answer"
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/second_answer"
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/third_answer"
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/forth_answer"
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/buttons_sec">
+
+        <ImageView
+            android:id="@+id/sasha"
+            android:background="@drawable/sasha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="130dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+        </Button>
+        <Button
+            android:id="@+id/back_to_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="130dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true">
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#096154</color>
+    <color name="colorAccent">#172280</color>
+    <color name="top_bg">#680F3092</color>
+    <color name="white">#FDFDFD</color>
+    <color name="blue">#0E3744</color>
+    <color name="firstRow">#6ED3E0</color>
+    <color name="scrollBg">#48111111</color>
+    <color name="score">#E67070</color>
+</resources>

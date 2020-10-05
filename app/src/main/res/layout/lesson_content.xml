@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/lesson_content_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:height="60dp"
+        android:textSize="40sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:background="@color/top_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttons_sec">
+            <Button
+                android:text="Quiz"
+                android:id="@+id/go_to_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="130dp"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+            </Button>
+            <Button
+                android:text="Wróć"
+                android:id="@+id/back_to_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="130dp"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true">
+            </Button>
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@color/scrollBg"
+       >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/no_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/firstRow"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/firstRow"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_expression_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/firstRow"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_1_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_1_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_2_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_2_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_3_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_3_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_4_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_4_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_5_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_5_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_6_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_6_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_7_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_7_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_8_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_8_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="9"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_9_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_9_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="10"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_10_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_10_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="11"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_11_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_11_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="12"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_12_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_12_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="13"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_13_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_13_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="14"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_14_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_14_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="15"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_15_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_15_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="16"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_16_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_16_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+        <TableRow android:layout_height="1px" android:background="#BDBDBD">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/last_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="17"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/sound_17_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/sing_ex_17_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_column="3"
+                android:clickable="true"
+                android:onClick="play"/>
+        </TableRow>
+
+    </TableLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
